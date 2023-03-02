@@ -1,3 +1,3 @@
-import facebook
+from facebook import Slebew
 
-facebook()
+Slebew().Njirr()
