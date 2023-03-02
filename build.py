@@ -2,7 +2,7 @@ import os,sys,shutil
 from distutils.core import setup, Extension
 from Cython.Build import cythonize
 
-main_file = "modgrat.cpp"
+main_file = "facebook.cpp"
 try:
 	nama = main_file.split(".")[0]
 	setup(
