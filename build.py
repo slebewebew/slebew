@@ -11,12 +11,13 @@ try:
 		script_args = [
 			"build_ext", "--inplace", "--force", "-j 5"]
 	)
+except Exception as e:
+	print(e)
 if os.path.exists(main_file):
-		try: shutil.rmtree("build/")
-		except:0
-		try: os.remove(main_file)
-		except:0
-	else:
-		print("Please install from full source")
+	try: shutil.rmtree("build/")
+	except:0
+	try: os.remove(main_file)
+	except:0
+else:
+	print("install semua module dengan mengetik : pip install -r asset/requirements.txt")
 
-install(main_file)
